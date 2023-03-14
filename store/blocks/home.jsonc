@@ -1,0 +1,72 @@
+{
+  "store.home": { 
+    "blocks": [
+      "list-context.image-list#demo",
+      "list-context.product-list#demo1",
+      "info-card#iphone"
+    ]
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://coppelar.vtexassets.com/assets/vtex.file-manager-graphql/images/4b6de6d7-deea-4b3e-a53b-d0ecf258450e___b18e733918159a919834c64329a096ba.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "https://coppelar.vtexassets.com/assets/vtex.file-manager-graphql/images/946d59e0-3889-4db2-abd9-574ad9a59131___585720bec693de50f7e24137545c9d22.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "rich-text": { 
+    "props": { 
+      "text": "VTEX Store Framework 2023",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "info-card#s23":{
+    "props":{
+      "id": "s23",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/s23.png",
+      "headline": "Clearance Sale",
+      "subhead": "Descubri el nuevo s23",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#iphone":{
+    "props":{
+      "id": "iphone",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://www.apple.com/la/iphone/home/images/overview/hero/hero_iphone_14_pro__e8bufymdlseq_medium.jpg",
+      "headline": "Clearance Sale",
+      "subhead": "Descubri el nuevo s23",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  }
+}

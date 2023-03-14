@@ -1,0 +1,190 @@
+{
+    "store.custom#post-landing": {
+      "blocks": [
+        "responsive-layout.desktop#pumas"
+      ]
+    },
+    "responsive-layout.desktop#pumas": {
+      "children": [
+        "flex-layout.row#puma",
+        "flex-layout.row#cabecera",
+        "list-context.product-list#demo1",
+        "flex-layout.row#imagenes",
+        "flex-layout.row#banner-f1",
+        "flex-layout.row#accesorios",
+        "flex-layout.row#category-break-1",
+        "flex-layout.row#banners",
+        "flex-layout.row#training",
+        "flex-layout.row#category-break-1"
+      ]
+    },
+    "flex-layout.row#banner-f1": {
+      "children": ["image#f1"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "image#f1": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/octubre/puma/DESKTOP/Motorsport.jpg"
+      }
+    },
+    "flex-layout.row#puma": {
+      "children": [
+        "list-context.image-list#puma"
+      ],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "flex-layout.row#accesorios":{
+      "children":["rich-text#accesorios"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "rich-text#accesorios": { 
+      "props": { 
+        "text": "ACCESORIOS",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "font": "t-heading-6"
+      }
+    },
+    "flex-layout.row#training":{
+      "children":["rich-text#training"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "rich-text#training": { 
+      "props": { 
+        "text": "TRAINING",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "font": "t-heading-6"
+      }
+    },
+    "flex-layout.row#category-break-1":{
+      "children":["list-context.product-list#category-break-1"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "list-context.product-list#category-break-1":{
+      "blocks":["product-summary.shelf"],
+      "children": ["slider-layout#productos"],
+      "props":{
+        "listName": "Celulares",
+        "collection": "149",
+        "blockClass" : "product-list"
+      }
+    },
+    "rich-text#calzado-puma": { 
+      "props": { 
+        "text": "CALZADO **HOMBRE | MUJER**",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "font": "t-heading-6"
+      }
+    },
+    "flex-layout.row#cabecera":{
+      "children":["rich-text#calzado-puma"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "flex-layout.row#imagenes":{
+      "children": ["image#banner-1","image#banner-2","image#banner-3"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "image#banner-1": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/octubre/puma/DESKTOP/WN.jpg",
+        "maxHeight": 24
+      }
+    },
+    "image#banner-2": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/octubre/puma/DESKTOP/MAN.jpg",
+        "maxHeight": 24
+      }
+    },
+    "image#banner-3": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/puma/marzo/desktop/ninos.jpg",
+        "maxHeight": 24
+      }
+    },
+    "list-context.product-list#demo1":{
+      "blocks":["product-summary.shelf"],
+      "children": ["slider-layout#productos"],
+      "props":{
+        "listName": "Celulares",
+        "collection": "149",
+        "blockClass" : "product-list"
+      }
+    },
+    "flex-layout.row#banners":{
+      "children": ["image#banner-4","image#banner-5"],
+      "props" :{
+        "blockClass" : "responive-home"
+      }
+    },
+    "image#banner-4": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/octubre/puma/DESKTOP/ACC.jpg",
+        "maxHeight": 24
+      }
+    },
+    "image#banner-5": {
+      "props": {
+        "src": "https://cdn2.coppel.com/images/emarketing/landings/2022/octubre/puma/DESKTOP/Training.jpg",
+        "maxHeight": 24
+      }
+    },
+    "list-context.image-list#puma": {
+      "children": ["slider-layout#demo-images"],
+      "props": {
+        "images": [
+          {
+            "image": "https://cdn2.coppel.com/images/emarketing/landings/2022/puma/marzo/desktop/HeadBanner_PUMA_Caballero.jpg",
+            "description": "something something"
+          },
+          {
+            "image": "https://cdn2.coppel.com/images/emarketing/landings/2022/puma/marzo/desktop/HeadBanner_PUMA_Dama.jpg",
+            "description": "something something"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-images": {
+      "props": {
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      }
+    },
+    "slider-layout#productos":{
+      "props": {
+        "infinite": true,
+        "showPaginationDots": "never",
+        "blockClass": "slider-productos"
+      }
+    },
+
+    "search-result-layout.customQuery#result":{
+        "props": {
+            "querySchema": {
+                "facetsBehavior":"Dynamic",
+                "queryField":"149",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+          "search-result-layout.desktop"
+        ]
+    }
+  }

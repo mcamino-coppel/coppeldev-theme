@@ -1,0 +1,130 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context" : {
+        "skuFilter": "ALL",
+        "simulationBehavior": "skip",
+        "orderByField":"OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
+  },
+  "store.search#brand": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context" : {
+        "skuFilter": "ALL",
+        "simulationBehavior": "skip",
+        "orderByField":"OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
+  },
+  "store.search#departament": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context" : {
+        "skuFilter": "ALL",
+        "simulationBehavior": "skip",
+        "orderByField":"OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
+  },
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context" : {
+        "skuFilter": "ALL",
+        "simulationBehavior": "skip",
+        "orderByField":"OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context" : {
+        "skuFilter": "ALL",
+        "simulationBehavior": "skip",
+        "orderByField":"OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
+  },
+  "search-result-layout":{
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "image#example",
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "image#example": {
+    "props": {
+      "src": "https://www.apple.com/la/iphone/home/images/overview/hero/hero_iphone_14_pro__e8bufymdlseq_medium.jpg"
+    }
+  },
+  "flex-layout.row#top": { 
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter": { 
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search": { 
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "blocks": ["product-summary.shelf"]
+  }
+}

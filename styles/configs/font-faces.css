@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'CircularStd';
+    src: url(assets/fonts/CircularStdBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(assets/fonts/HelveticaNeueBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(assets/fonts/helveticaneue.ttf);
+    font-weight: normal;
+}

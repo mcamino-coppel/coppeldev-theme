@@ -1,0 +1,9 @@
+.flexRowContent--responive-home, .sliderLayoutContainer{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.stretchChildrenWidth {
+    padding: 0 5px;
+    margin: auto;
+}

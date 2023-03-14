@@ -1,0 +1,23 @@
+.autoCompleteOuterContainer{
+    height: 48px;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    box-shadow: 0 2px 3px rgba(0,0,0,.16);
+}
+
+.searchBarIcon{
+    background-color: #016db6;
+    color: white;
+}
+
+.imageElement{
+    max-height: fit-content !important;
+    width: 100%;
+    padding: 10px;
+}
+
+.imageElement--break-image{
+    width: 25%;
+}

@@ -1,0 +1,40 @@
+.caretIcon{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.paginationDotsContainer {
+    bottom: -20px;
+}
+
+.paginationDot--isActive {
+    background-color: #869791;
+}
+
+.imageElement{
+    max-height: fit-content !important;
+}
+
+.sliderLayoutContainer{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.caretIcon--slider-productos{
+    margin: 0 !important;
+    background-color: white;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 16%);
+    padding: 20px;
+}
+
+.sliderLeftArrow--slider-productos{
+    left: -40px;
+}
+
+.sliderRightArrow--slider-productos{
+    right: -40px;
+}
