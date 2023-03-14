@@ -1,7 +1,7 @@
 {
   "vendor": "coppelar",
-  "name": "site-theme",
-  "version": "6.1.1",
+  "name": "coppeldev-theme",
+  "version": "0.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
